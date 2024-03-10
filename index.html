@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">	<link rel="stylesheet" href="style/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<img src="images/ankama_games_blanc.png" class="logo img-fluid" alt="ankama_logo">
+			<!-- burger icon -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- menu -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled">Disabled</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+        </div>
+    </nav>
+    <div class="container d-sm-flex">
+        <div class="row">
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card 1</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui similique quo delectus ab quas odio eaque. Cupiditate, officia doloribus error natus ea exercitationem? Eos laudantium, quaerat recusandae cumque nam maiores!</p>
+						<button class="btn btn-primary">primary</button>
+						<button class="btn btn-success">success</button>
+						<button class="btn btn-secondary">secondary</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card 2</h5>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. similique accusantium qui eligendi expedita harum odit tempore eos maxime assumenda. Excepturi officiis dicta iure error! Ea!</p>
+						<button class="btn btn-warning" data-bs-toggle="popover" title="Hello There !!" data-bs-content="Famous sentence said by Obi-wan Kenobi. To the general Grevous">HERE !!!</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card 3</h5>
+						<table class="table table-striped table-hover">
+							<tr>
+								<th>header</th>
+								<th>header</th>
+								<th>header</th>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>data</td>
+								<td>data</td>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>data</td>
+								<td>data</td>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>data</td>
+								<td>data</td>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>data</td>
+								<td>data</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores soluta est optio, itaque vero obcaecati adipisci harum aut quia deserunt sapiente voluptas id, quasi recusandae modi iusto quos quidem? dolor sit amet, consectetur adipisicing elit. Nesciunt, ipsam dicta, tenetur sed labore nulla repudiandae vel hic modi laborum architecto quibusdam! Quam eligendi temporibus doloribus enim, modi facere error.</p>
+		</div>
+    </div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<h1>Footer</h1>
+			<span class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ea odio optio dignissimos laboriosam obcaecati quo veniam dolorem ipsa, ipsam quos asperiores sequi beatae porro quaerat iusto explicabo iure eum.</span>
+		</div>
+	</footer>
+
+	<script>
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		  return new bootstrap.Popover(popoverTriggerEl)
+		})
+	</script>
+</body>
+</html>
